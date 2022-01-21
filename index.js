@@ -6,7 +6,7 @@ import { Db, MongoClient } from 'mongodb';
 import dotenv from "dotenv";
 const app = express()
 dotenv.config();
-const PORT=8080;
+const PORT=process.env.PORT;
 const users=[
     {
     "createdAt": "2021-10-01T00:49:47.780Z",
